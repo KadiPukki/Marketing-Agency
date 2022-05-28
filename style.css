@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(105, 208, 237);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:900;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 300px;  
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+ul {
+    list-style: none;
+}
+
+.menu li {
+    margin: 30px 40px;
+}
+
+.menu-item {
+    color: white;
+}
+
+.btn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-right: 50px;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    color: rgb(4, 4, 48);
+    font-weight: 600;
+    font-size: 15px;
+    height: 2rem;
+    border-radius: 30px;
+}
+
+.grid-container {
+    width: 60%;
+    height: 150vh;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "grid-item1 grid-item2"
+    "grid-item3 grid-item4"
+    "grid-item5 grid-item6";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    font-family: 'Source Serif Pro', serif;
+    background-color:rgb(220, 241, 244);
+}
+
+.grid-container p {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(50, 50, 69);
+    margin-top: 15px;
+    margin-left: 17px; 
+    word-spacing: 12px;   
+}
+
+.grid-container button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding: 10px;  
+    margin-top: 10px;  
+    margin-left: 17px;
+    background-color: rgb(13, 13, 99);
+    border: none;
+    font-weight: 600;
+    font-size: 10px;
+    height: 2rem;
+    border-radius: 30px;    
+}
+
+.grid-item1 {
+    grid-area: grid-item1;
+}
+
+.grid-item1 a {
+    color: white;
+}
+
+.grid-item2 {
+    grid-area: grid-item2;
+    background-image: url(./images/giorgio-trovato-fczCr7MdE7U-unsplash.jpg);
+    background-size: cover;
+}
+
+.grid-item3 {
+    grid-area: grid-item3;
+    background-image: url(./images/copo.jpg);
+    background-size: cover;
+}
+
+.grid-item4 {
+    grid-area: grid-item4;
+}
+
+.grid-item4 a {
+    color: white;
+}
+
+.grid-item5 {
+    grid-area: grid-item5;
+    background-image: url(./images/cherry.jpg);
+    background-size: cover;
+}
+
+.grid-item5 a {
+    color: white;
+}
+
+.grid-item6 {
+    grid-area: grid-item6;
+    background-image: url(./images/orange.jpg);
+    background-size: cover;
+}
+
+.grid-item6 a {
+    color: white;
+}
+
+.testimonial {
+    width: 100%;
+    height: 50vh;
+}
+
+.testimonial h3 {
+    text-align: center;   
+    margin-top: 80px;
+    color: rgb(156, 146, 146);
+    text-transform: uppercase;
+    font-family: 'Source Serif Pro', serif;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+
+.comment {
+    text-align: center;
+    display: flex;
+    margin: 40px;
+    gap: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.text1 {
+    margin: 30px;    
+}
+
+.text1 a {
+    color: black;
+}
+
+.text2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 700;
+    color: rgb(13, 13, 99);
+}
+
+.gallery {
+    display: grid;
+    grid-template-areas: "image1 image2 image3 image4";
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    height: 60vh;  
+}
+
+.image1 {
+    background-image: url(./images/milk.jpg);
+    grid-area: image1;      
+}
+
+.image2 {
+    background-image: url(./images/abacate.jpg);
+    grid-area: image2;         
+}
+
+.image3 {
+    background-image: url(./images/laranja.jpg);
+    grid-area: image3;           
+}
+
+.image4 {
+    grid-area: image4;
+    background-image: url(./images/sugar.jpg);  
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(220, 241, 244);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 91, 91);
+    align-items: center;
+}
+
+.footer-logo {
+    text-transform:lowercase;
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 200px;
+}
+
+.footer-logo a {
+    color: rgb(12, 91, 91);
+}
+
+.menu-footer {
+    margin-top: 30px;
+}
+
+.list-footer {
+    display: flex;    
+    flex-direction: row;
+}
+
+.list-footer a {
+    color: rgb(12, 91, 91);
+}
+
+.list-footer li {
+    font-size: 20px;
+    margin: 30px;
+    font-weight: 500;
+}
+
+.social {
+    font-size: 30px;
+    margin-left: 200px;
+}
+
+.social a {
+    color: rgb(12, 91, 91);
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .logo {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 10px;        
+    }   
+
+    .footer-logo {
+        font-weight: 900;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 80px;
+    }
+    
+    .social {
+        font-size: 20px;
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 20px;        
+    }
+    .menu {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 50px;  
+    }
+
+    .grid-container {
+        width: 90%;
+    }
+
+    .footer-logo {
+        font-weight: 900;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 80px;
+    }
+
+    .list-footer li {
+        font-size: 15px;
+        margin: 10px;
+        font-weight: normal;
+    }
+
+    .social {
+        font-size: 20px;
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .logo {
+        font-size: 18px;
+        margin-top: 40px;
+        margin-left: 10px;        
+    } 
+
+    .menu li {
+        font-size: 14px;
+        margin: 40px 20px;    
+    }
+
+    .grid-container {
+        width: 100%;
+    }
+    
+    .comment {
+        text-align: center;
+        margin: 20px;
+        gap: 5px;
+        font-size: 12px;
+    }
+    
+    .text1 {
+        margin: 30px;    
+    }
+    .list-footer li {
+        display: none;
+    }
+
+    .menu button {
+        display: none;
+    }
+
+    .grid-container p {
+        font-size: 18px;
+    }
+
+    .testimonial {
+        font-size: 14px;
+        height: 70vh;
+    }
+
+    .gallery {
+        height: 40vh;  
+        
+    }
+
+    .social {
+        font-size: 20px;
+        margin-left: 100px;
+    }
+}
+
+
+
